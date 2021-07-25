@@ -1,0 +1,9 @@
+@import './buttons.css';
+
+:root {
+	--background: #26b4bc;
+}
+
+body {
+	background-color: var(--background);
+}
