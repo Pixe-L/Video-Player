@@ -9,9 +9,19 @@
 		<title>Video Player</title>
 	</head>
 	<body>
-		<video controls autoplay muted src="./videos/lofi.mp4" width="400px"></video>
-		<button>play</button>
-		<button>pause</button>
-		<button>adelantar 10 segundos</button>
+		<video
+			id="video"
+			poster="./files/likeastone.jpg"
+			controls
+			muted
+			src="./files/audioslave-like-a-stone-official-video.mp4"
+			width="400px"
+		></video>
+		<button class="button" id="backward"></button>
+		<button class="button" id="forward"></button>
+		<button class="button" id="play"></button>
+		<button class="button" id="pause"></button>
+
+		<script src="./js/app.js"></script>
 	</body>
 </html>
