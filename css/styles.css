@@ -2,10 +2,12 @@
 
 :root {
 	--background: #26b4bc;
+	--font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
 	background-color: var(--background);
+	font-family: var(--font-family);
 }
 
 .wrapper {
@@ -13,6 +15,43 @@ body {
 	margin: auto;
 }
 
+.player {
+	position: relative;
+	margin-block-start: 8.375rem;
+}
+
 .player video {
 	inline-size: 100%;
+	aspect-ratio: 16/9;
+	vertical-align: middle;
+}
+
+.player-title {
+	position: absolute;
+	color: black;
+	inset-block-start: 0;
+	inset-inline-start: 10px;
+}
+
+.player-actions {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	z-index: 2;
+}
+
+.player-progress {
+	position: absolute;
+	inset-block-end: 0;
+	inset-inline: 0;
+	display: flex;
+	padding: 10px;
+	z-index: 2;
+}
+
+.player-progress input {
+	flex: 1;
 }
